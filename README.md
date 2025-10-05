@@ -38,7 +38,10 @@ The Base Station firmware is written in **C++**. Key libraries include:
 3. **Packet Parsing**: Extracts GPS, object detection, and metadata.  
 4. **BLE Broadcasting**: Data is relayed to the mobile application for real-time visualization.
 
-<!-- Add picture of LoRa communication to phone or something -->
+<div align="center">
+  <img src="ressources/pictures/BLETerminalApp.png" alt="BLE Terminal App Output" style="width:70%;" />
+  <p><em>Figure: BLE terminal output showing received telemetry and POI (human detected at specific coordinates)</em></p>
+</div>
 
 ## Software Architecture
 
