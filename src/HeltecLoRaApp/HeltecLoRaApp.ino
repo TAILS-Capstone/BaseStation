@@ -37,17 +37,6 @@ struct GPSLocation
     int32_t heading;   // Scaled by HEADING_SCALE
 };
 
-// Array of fake locations to simulate movement
-// Values are pre-scaled to avoid any floating-point operations
-GPSLocation locations[] = {
-    {377749000, -1224194000, 0, 0},        // San Francisco (37.774900, -122.419400)
-    {377833000, -1224167000, 5000, 9000},  // Moving east
-    {377917000, -1224140000, 10000, 9000}, // Moving east faster
-    {378000000, -1224113000, 5000, 18000}, // Moving south
-    {378083000, -1224086000, 0, 27000},    // Moving west
-    {378167000, -1224059000, 5000, 0}      // Moving north
-};
-
 int currentLocationIndex = 0;
 const int NUM_LOCATIONS = sizeof(locations) / sizeof(locations[0]);
 
