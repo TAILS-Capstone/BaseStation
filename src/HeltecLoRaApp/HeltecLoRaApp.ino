@@ -28,18 +28,6 @@
 
 BLEInterface *bleServer;
 
-// Fake GPS coordinates for testing (in fixed-point format)
-struct GPSLocation
-{
-    int32_t latitude;  // Scaled by LAT_LON_SCALE
-    int32_t longitude; // Scaled by LAT_LON_SCALE
-    int32_t speed;     // Scaled by SPEED_SCALE
-    int32_t heading;   // Scaled by HEADING_SCALE
-};
-
-int currentLocationIndex = 0;
-const int NUM_LOCATIONS = sizeof(locations) / sizeof(locations[0]);
-
 void setup()
 {
     Serial.begin(115200);
