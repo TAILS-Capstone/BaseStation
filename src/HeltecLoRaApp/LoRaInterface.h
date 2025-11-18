@@ -38,7 +38,7 @@
 #define LORA_IQ_INVERSION_ON false
 
 #define RX_TIMEOUT_VALUE 1000
-#define BUFFER_SIZE 15 // Define the payload size here
+#define BUFFER_SIZE 27 // Define the payload size here
 
 class LoRaInterface
 {
