@@ -1,6 +1,6 @@
 # T.A.I.L.S. — Base Station (Ground Node)
 
-By Frederick Andrews, Jad Mghabghab, Josué Dazogbo, Maureen Kouassi, Mouad Ben Lahbib, Computer Engineering Students at the University of Ottawa  
+By Frederick Andrews, Jad Mghabghab, Josué Dazogbo, Maureen Kouassi, Mouad Ben lahbib, Computer Engineering Students at the University of Ottawa  
 Date: 5 October 2025  
 
 ## Overview  
