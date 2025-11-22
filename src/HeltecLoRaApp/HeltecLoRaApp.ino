@@ -55,8 +55,12 @@ void loop()
         LoRaInterface::getRxPacket(locationData);
 
         // Send location data
-        bleServer->setValue(locationData, LoRaInterface::getRxSize());
-        bleServer->notify();
+        if (LoRaInterface::getRxSize())
+        {
+          bleServer->setValue(locationData, LoRaInterface::getRxSize());
+          bleServer->notify();
+        }
+        delay(100); // For Old Samsung phone compatibility
     }
 
     // Handle device disconnection
